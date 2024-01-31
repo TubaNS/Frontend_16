@@ -1,0 +1,55 @@
+
+
+h1{
+    color: red;
+    text-align: center;
+}
+
+
+#list{
+    border:3px solid black;
+    list-style-type: none;
+}
+
+li{
+    background-color: magenta;
+}
+/* mause ile üstüne gelince azılar kalınlaşsın istiyorsan :hover yapıyorrsun */
+
+li:hover{
+    font-weight: 900;
+    cursor: pointer;
+}
+
+span{
+    color: blue;
+}
+span:hover{
+    color: orange;
+}
+/* hoverde color kelenrsen mosune üzerin egeldiğinde belirlediğin renge döner */
+/* spanın üzerine mouse gelnce nasıl olmasını istiyorsak :hover ile yapıyorsun */
+
+.abc{
+    font-size: 2rem;
+}
+
+/* idler genelde java için kullanılır. unictir tektir. cssde de kullanılıyor ama çok kullanıp javada patlamamak gerekiyor */
+
+#abc{
+    background-color: blue;
+
+
+}
+
+.abc{background-color: yellow;
+
+}
+/* idlerin classlara göre önceliği vardır */
+
+
+
+
+
+
+/* idler birdir ve tektir classları bir çok elemente verebiliriz */

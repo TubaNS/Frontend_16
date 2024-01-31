@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./netflix.css" />
+    <title>NetFlix</title>
+  </head>
+  <body>
+    <div id="container">
+        <div>
+            <div>
+    <h1>Net<span id="flix">Flix</span></h1>
+    <p id="description">Thank you for signing up at Netflix. Tell us more about yourself.</p>
+<!-- formu submite bastıktan sonra formun sunucuya spnuçları götürmesi için yapıyoruz. farklı bir html açıyoruz ve oraya bağlıyoruz -->
+    <form id="Survey-Form" action="./action.html">
+    </div>
+    <!-- text -->
+    <div class="box">  
+      <label for="name">Name</label> <br/>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name"/>
+      <br/><br/>
+    </div>
+
+    <!-- number -->
+    <div class="box"> 
+      <label for="age">Age</label><br/>
+      <input type="number" name="Age" placeholder="Age" step="1" min="18"/>
+      <br /><br />
+    </div>
+
+
+    <!-- email -->
+    <div class="box">  
+      <label for="email">Email</label><br />
+      <input type="email" name="Email" placeholder="Enter your email" />
+      <br /><br />
+    </div>
+
+
+    <!-- select ve option ile -->
+    <div class="box">  
+      <label for="contenttype">Content Type</label>
+      <br>
+      <select name="Series" id="contentype size="1">
+        <option value="Series">Series</option>
+        <option value="films">Films</option>
+      </select>
+      
+    </div>
+    <br>
+
+    <!-- checkbox  --> 
+    <!-- value kullanıcıdan almka istediğimiz seçeneği görmek için kullanılıyor -->
+    <div>
+        <p>Movie Type </p>
+
+        <input type="checkbox" name="Comedy" id="comedy" >
+        <label for="comedy">Comedy</label><br>
+
+        <input type="checkbox" name="Action" id="action" >
+        <label for="action">Action</label><br>
+
+        <input type="checkbox" name="Romance" id="romance" checked >
+        <label for="Romance">Romance</label>
+
+        <!-- checked yazdığında sitede oraası seçili olarak gösteriyor -->
+    </div>
+
+
+    <!-- radio -->
+    <div>
+        <p>Gender</p>
+
+        <input type="radio" id="male" name="gender" >
+        <label for="gender1">Male</label><br>
+
+        <input type="radio" id="female" name="gender" >
+        <label for="gender2">Female</label><br>
+
+        <input type="radio" id="other" name="gender" ">
+        <label for="gender3">Other</label>
+<br><br>
+
+<!-- textarea -->
+<div>
+    <label for="feedback" >Feed back</label><br>
+    <textarea name="any_comment" placeholder="Any comment" id="comment" style="width: 50%; height: 150px; resize: none;"></textarea>
+    
+<br>
+<input type="submit" value="Submit">
+</form> 
+
+    </div>   
+    
+  
+</div>
+
+</div>
+
+  </body>
+</html>

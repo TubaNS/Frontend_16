@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+}
+.img-float{
+    width: 40%;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.par1{
+    background-color: chocolate;
+}
+.par2{
+    clear: left;
+}
+.container{
+   /* border: 2px solid red; */
+}
+.box{
+    float: left;
+}
+.box1{
+    background-color: lime;
+    /*float: left;*/
+    width: 33.3333%;
+}
+.box2{
+    background-color: purple;
+    /*float: left;*/
+    width: 33.3333%;
+}
+.box3{
+    background-color: darkorange;
+  /*float: left;*/
+  width: 30%;
+  height: 30vh;
+  background-image:
+}

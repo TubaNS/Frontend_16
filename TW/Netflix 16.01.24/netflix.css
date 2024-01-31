@@ -1,0 +1,46 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-image: url(./img/background_image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: left;
+    color: white;
+    height: 100vh;
+}
+
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Bowlby One', sans-serif;
+}
+
+#description {
+    text-align: center;
+    font-size: larger;
+    
+}
+
+
+#flix {
+    color: red;
+    font-family: 'Bowlby One', sans-serif;
+}
+
+form {
+    background-color: #000000AA;
+    height: auto;
+    width: 400px;
+    margin: auto;
+
+}
