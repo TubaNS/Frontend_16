@@ -15,30 +15,48 @@ background-color: black;
 .container{
     height: 100%;
     background-color: black;
+    justify-content: center;
+    gap: 10px;
+    margin: 50px;
+    width: 400px;
+    height: 500px;
+    border-radius: 50px 50px 50px 50px;
 }
+
 
 .result{
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: flex-end;
     color: white;
-    height: 39%;
+    margin: 50px;
+    width: 350px;
+    height: 150px;
+    
 
 }
 
 .result span{
     margin-right: 60px;
-    font-size: 210px;
+    font-size: 135px;
     justify-self: flex-end;
 }
 
 .buttons {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 20px;
     width: 100%;
     height: 60%;
     background-color: black;
-    display: grid;
+    
     grid-template-columns: 25% 25% 25% 25%;
 }
+
 
 .item {
     display: flex;
@@ -54,7 +72,9 @@ background-color: black;
     align-self: center;
     justify-self: center;
 }
-
+.item:hover{
+    opacity: 0.7;
+}
 .percent {
     background-color: #a5a5a5;
     border: none;
@@ -76,14 +96,15 @@ background-color: black;
     border: none;
 }
 
+
 .negative, .clear {
     color: black;
 }
 
 .itemZero {
     background-color: #343434;
-    width: 300px;
+    width: 230px;
     border-radius: 90px;
     grid-column: span 2;
-    border: none;
+    
 }

@@ -38,6 +38,41 @@ function getSecondValue(el) {
 
 
 function getSign() {
-for(let i = 0; i < signs.)
-
+    for(let i = 0; i < signs.leghth; i++); {
+    signs[i].addEventListener('click', (e) => {
+        sign = e.target.getAttribute('value');
+        isFirstValue = true;
+    })
 }
+}
+
+getSign();
+
+    equals.addEventListener('click', () => { 
+        result.interHTML = "";
+    if(sign === "+"){
+        resultValue = firstValue + secondValue
+      } else if (sign === "-") {
+        resultValue = firstValue - secondValue;
+    } else if(sign === "x") {
+        resultValue = firstValue * secondValue;
+    } else if(sign === "/") {
+    resultValue = firstValue / secondValue;
+    }
+    result.innerHTML = resultValue
+    firstValue = resultValue;
+    secondValue = "";
+
+    })
+
+
+    function checkResultLength() {
+        resultValue = JSON.stringify(resultValue);
+
+        if(resultValue.leghth >= 8){
+            resultValue = Json.parse(resultValue);
+            result.innerHTML = resultValue.toFixed(5);
+        }
+    }
+
+
