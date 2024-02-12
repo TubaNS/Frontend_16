@@ -60,3 +60,39 @@ for(let i in notlar1) {
 console.log(notlar1)
 console.log(ellidenBuyukNotlar1)
 console.log(ellidenKucukNotlar1)
+
+//? low-level language example
+// deneme: mov a,b  
+//         add R1,R2  
+//         djmp R1, deneme
+
+
+
+
+//?-----------------FOR OF----------------------------
+const students = ["ahmet", "mehmet", "ismet", "saffet", "ahmet", "saffet"]
+
+const strArrayUpperCase = (students) => {
+    let upperCasedArray = []
+    
+    for (let student of students){
+    upperCasedArray.push(student = student.toUpperCase())
+
+}
+    return upperCasedArray
+}
+const myArray = strArrayUpperCase(students)
+
+console.log(myArray, students)
+
+//*-------------------------------------------------------
+//* SORU: ogrenciler dizisinde ogrenci isimleri saklanmaktadir.
+//* ogrencileri aramamizi saglayacak ve aranilan ogrenciden
+//* ne kadar sayida bulunuldugunu ana programa dondurecek bir
+//* fonksiyon yaziniz. Eger aranilan isimde bir ogrenci yok ise
+//* fonksiyon "ogrenci bulunamadi" dondurulmelidir.
+//*--------------------------------------------------------
+
+
+//! ogrenciAra("ahmet") ===> "Ahmet 2 adet bulundu"
+//! ogrenciAra("canan") ===> "Canan bulunamadı"
