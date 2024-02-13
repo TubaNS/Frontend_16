@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.daire{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+}
+.circular2{
+    width: 150px;
+    height: 150px;
+}
+
+.circular1{
+    animation: circular1 3s linear infinite normal;
+    position: absolute;
+}
+
+.circular3{
+    animation: circular3 3s linear infinite normal;
+    position: absolute;
+}
+
+@keyframes circular1 {
+   0%{
+    transform: translateX(0);
+   }
+   50%{
+    transform: translateX(-20vw);
+   }
+   100%{
+    transform: translateX(15vw);
+   } 
+}
+
+@keyframes circular3 {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(20vw)
+    }
+    100%{
+        transform: translateX(-15vw);
+    }
+}
