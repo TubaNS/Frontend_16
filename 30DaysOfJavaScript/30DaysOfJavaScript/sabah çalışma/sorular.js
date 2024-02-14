@@ -59,17 +59,19 @@ console.log(filterOut);
 //* -------------------------------------------------------------------------- */
 
 console.log(company.sort());
+ console.log(company.sort().reverse());
 
-company.sort(function(a, b){
-    return a - b;
-}
-)
+//*ikinci Yöntem
+// company.sort(function(a, b){
+//     return a - b;
+// }
+// )
 
-console.log(`Normal Siralama : ${company.slice("").join(", ")}.`);
+// console.log(`Normal Siralama : ${company.slice("").join(", ")}.`);
 
-company.sort(function(a, b){
-    return b.localeCompare(a);
-})
+// company.sort(function(a, b){
+//     return b.localeCompare(a);
+// })
 
-console.log(`Tersten Siralama : ${company.slice("").join(", ")}.`);
+// console.log(`Tersten Siralama : ${company.slice("").join(", ")}.`);
 
