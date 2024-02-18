@@ -22,7 +22,7 @@ transform: rotateX(180deg);
 /* position: relative;
 z-index: 2; */
 }
-.yazi1:active .yazi2:active{
+.yazi1:active + .yazi2: {
     background-color: gold; 
 }
 .yazi2{
