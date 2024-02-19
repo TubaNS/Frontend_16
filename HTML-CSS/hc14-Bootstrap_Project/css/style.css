@@ -2,6 +2,7 @@
     --primary-color:#bc6c25;
     --secondary-color:#4d3822;
     --hover-color:#e76f51;
+    --section-color:#B78752;
 
 }
 
@@ -17,11 +18,11 @@
     background-color: transparent !important;
     position: fixed;
     z-index: 5;
-    width: 100vh;
+    width: 100%;
 }
 
 .navbar .container{
-    background-color: rgba(0, 0, 0, 0.519) !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
 }
 
 
@@ -41,21 +42,24 @@
 }
 
 /*! CAROUSEL */
+
 .carousel-item{
-    /* border:  5px solid red; */
-    /* height: calc(100vh - 135px
-    ); */
+    /* border: 5px solid red; */
+    /* height: calc(100vh - 135px); */
     height: 100vh;
 }
+
 .carousel-item img{
     height: 100%;
     object-fit: cover;
 }
 
+
 .carousel-caption{
     /* border: 5px solid blue !important; */
 
     bottom: 40%;
+    
 }
 
 .carousel-caption .btn{
@@ -65,6 +69,7 @@
     white-space: nowrap;
     color: white;
     font-weight: bold;
+
 }
 
 .carousel-caption .btn:first-child{
@@ -75,54 +80,48 @@
     position: relative;
     z-index: 3;
 }
-.black
-{
+
+.black{
     width: 350px;
     height: 400px;
-    background-color: rgba(0, 0, 0, 0.856);
+    background-color: rgba(0, 0, 0, 0.809);
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(45deg
-    );
- 
+    transform: translate(-50%, -50%) rotate(40deg);
+    z-index: 2;
+    
 }
 
-
 .carousel-indicators{
-/* display: flex; */
+  /* display: flex;   */
 
-
-gap: 1.7rem !important; 
+  gap: 0.7rem !important;
 }
 
 .carousel-indicators button{
     background-color: var(--primary-color) !important;
     padding: 0.1rem !important;
-    width:  3rem !important;
-
+    width: 3rem !important;
 }
-
-section#about{
-    height: 100vh;
-    background-color: var(--secondary-color);
-}
-
 /*! ABOUT */
-
 section#about{
-    height: 100vh;
+    
     background-color: var(--secondary-color);
 }
-
 
 .image-container{
-    
+    /* border: 2px solid red; */
     position: relative;
+
+}
+.image-container img{
+    width: 100%;
+
 }
 
+
 .about-image-info{
-    /* border: 2px solid red; */
     background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0.509),
@@ -139,3 +138,54 @@ section#about button{
     background-color: var(--primary-color);
     border: none;
 }
+
+/*! PEOPLE */
+
+section#people{
+    background-color: var(--section-color);
+}
+section#people .container{
+    background-color: var(--secondary-color);
+}
+section#people .card{
+    background-color: var(--primary-color);
+    transition: all .5s;
+    overflow: hidden;
+}
+section#people .card:hover{
+    transform: scale(1.05);
+}
+section#people .card img{
+    transition: all 0.5s;
+}
+section#people .card img:hover{
+    transform: scale(1.1);
+}
+
+section#people i{
+    transition: all .5s;
+}
+section#people i:hover{
+    opacity: .5;
+}
+
+
+
+/*! Menü */
+
+section#menu{
+    background-color: var(--secondary-color) !important; 
+    margin-right: 1rem;
+}
+
+section#menu button{
+    background-color: var(--secondary-color) !important;
+    margin-right: 1rem;
+
+}
+
+section#menu .container{
+    background-color: var(--primary-color) !important;
+    margin-right: 1rem;
+}
+
