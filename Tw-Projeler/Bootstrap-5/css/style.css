@@ -1,0 +1,182 @@
+:root {
+    --primary-color: #212529;
+    --secondary-color: rgb(128, 0, 128);
+    --hover-color: rgba(255, 255, 255, 0.041);
+    --section-color:rgba(255, 255, 255, 0.75);
+
+} 
+
+
+
+*{
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 0;
+    padding: 0;
+    
+}
+
+a{
+    color: white !important;
+    cursor: pointer;
+    
+}
+
+/*! NAVBAR */
+.navbar{
+    background-color: transparent !important;
+}
+
+.navbar .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+background-color: var(--primary-color) !important ;
+} 
+
+ .navbar-nav {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    text-transform: capitalize;
+   
+}
+
+.navbar-brand{
+    font-size: px;
+    color: #FFFF !important;
+}
+
+.nav-link{
+    font-size: 14px;
+}
+
+.navbar-brand:hover,
+.nav-link:hover{
+    background-color: var(--hover-color);
+    opacity: 0.2;
+}
+
+
+
+/*! BANNER */
+.banner{
+background-image: url(../img/banner.jpeg) ;
+background-size: cover;
+
+padding-top: 20%;
+padding-bottom: 20%;
+height: 100vh;
+color: var(--secondary-color);
+background-repeat: no-repeat;
+
+}
+
+.container-text-center{
+    text-align: center !important;
+
+}
+.display-6{
+    display: block;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+.display-1{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.btn{
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: inherit;
+cursor: pointer;
+display: inline-block;
+font-size: 400;
+
+
+}
+
+.btn-danger{
+  
+    justify-content: center;
+    align-items: center;
+    /* width: 141px;
+    height: 48px;
+ padding: 8px 16px 8px 16px;
+ line-height: 1.5;
+text-align: center;
+vertical-align: center;
+border: 1px solid  */
+}
+
+.btn-danger:hover{
+    color: white;
+    background-color: #bb2d3b ;
+    border-color: #b02a37;
+}
+
+
+/*! SERVICES */
+.services1{
+    font-size: 25px;
+}
+
+ .fa-solid,
+ .fa-code
+ .fa-2xl
+ {
+   background-color: #dc3545;
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .circle i{
+   
+    display: flex;
+    font-size: 100px;
+    font-weight: bold;
+ }
+
+.container-fluid-services{
+    border: 2px solid red;
+  position: absolute;
+
+ 
+
+}
+
+
+
+
+
+
+
+/*
+.navbar .container{
+background-color: var(--primary-color) !important ;
+
+}
+
+
+.navbar-nav {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    
+}
+
+.nav-link {
+    color: white;
+    text-align: left;
+    
+}
+.nav-link:hover{
+    color: var(--primary-color);
+}  */
