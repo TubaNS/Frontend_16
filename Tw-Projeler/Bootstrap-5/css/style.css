@@ -128,7 +128,7 @@ border: 1px solid  */
  .fa-solid,
  .fa-code
  .fa-2xl
- {
+ 
    background-color: #dc3545;
    width: 150px;
    height: 150px;
@@ -145,13 +145,21 @@ border: 1px solid  */
     font-weight: bold;
  }
 
-.container-fluid-services{
+
+ /*! PORTFOLIO */
+
+
+
+
+
+
+/* .container-fluid-services{
     border: 2px solid red;
   position: absolute;
 
  
 
-}
+} */
 
 
 
