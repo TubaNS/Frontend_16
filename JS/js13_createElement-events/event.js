@@ -3,3 +3,19 @@
 //* ===============================================
 
 console.log("****** EVENTS *******")
+
+//? Selectorler
+const h2 = document.querySelector(".add-item h2")
+
+//?event tanımlamalari
+
+//* mouse h2 elemenitini üzerine geldiğinde tetiklenir
+h2.onmouseover = function () {
+  //   h2.style.color = "red"
+  h2.classList.add("red", "center")
+}
+
+//* mouse h2 elemenitinin üzerinden ayrıldığınıda tetiklenir
+h2.onmouseout = () => {
+  h2.classList.remove("red", "center")
+}
